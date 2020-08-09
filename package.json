@@ -1,0 +1,23 @@
+{
+  "name": "@byndyusoft/stylelint-config",
+  "version": "0.1.0",
+  "description": "Byndyusoft shareable config for stylelint",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Byndyusoft/stylelint-config.git"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "lint",
+    "css",
+    "byndyusoft"
+  ],
+  "author": "Byndyusoft",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Byndyusoft/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/Byndyusoft/stylelint-config#readme"
+}
