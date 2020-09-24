@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Byndyusoft shareable config for stylelint",
   "main": "index.js",
+  "scripts": {
+    "prettier:write": "prettier --write"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Byndyusoft/stylelint-config.git"
@@ -19,5 +22,21 @@
   "bugs": {
     "url": "https://github.com/Byndyusoft/stylelint-config/issues"
   },
-  "homepage": "https://github.com/Byndyusoft/stylelint-config#readme"
+  "homepage": "https://github.com/Byndyusoft/stylelint-config#readme",
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2"
+  },
+  "peerDependencies": {
+    "stylelint": "^13.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "prettier:write"
+  }
 }
