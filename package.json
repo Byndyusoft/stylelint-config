@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "Byndyusoft shareable config for stylelint",
   "main": "index.js",
-  "scripts": {
-    "prettier:write": "prettier --write"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Byndyusoft/stylelint-config.git"
@@ -37,6 +34,6 @@
     }
   },
   "lint-staged": {
-    "*.js": "prettier:write"
+    "*.js": "prettier --write"
   }
 }
