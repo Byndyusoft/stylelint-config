@@ -1,5 +1,7 @@
 # @byndyusoft/stylelint-config
 
+[![NPM version](https://img.shields.io/npm/v/@byndyusoft/stylelint-config.svg)](https://www.npmjs.com/package/@byndyusoft/stylelint-config)
+
 > Byndyusoft shareable config for stylelint
 
 ## Install
