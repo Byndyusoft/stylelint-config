@@ -50,14 +50,20 @@ module.exports = {
         ],
         'selector-combinator-allowed-list': [' ', '+', '>', '~'],
         'selector-max-attribute': 1,
-        'selector-max-class': 3,
+        'selector-max-class': [3, { severity: 'warning' }],
         'selector-max-combinators': [2, { severity: 'warning' }],
         'selector-max-compound-selectors': [2, { severity: 'warning' }],
         'selector-max-empty-lines': 0,
         'selector-max-id': 0,
-        'selector-max-pseudo-class': 2,
+        'selector-max-pseudo-class': [1, { severity: 'warning' }],
         'selector-max-specificity': ['0,3,1', { severity: 'warning' }],
-        'selector-max-type': [1, { severity: 'warning' }],
+        'selector-max-type': [
+            1,
+            {
+                ignore: ['descendant', 'next-sibling'],
+                severity: 'warning'
+            }
+        ],
         'selector-max-universal': 1,
         'selector-no-qualifying-type': true,
         'selector-pseudo-class-no-unknown': true,

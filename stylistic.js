@@ -26,7 +26,6 @@ module.exports = {
         'color-named': 'never',
         'declaration-bang-space-after': 'never',
         'declaration-bang-space-before': 'always',
-        'declaration-colon-newline-after': 'always-multi-line',
         'declaration-colon-space-after': 'always-single-line',
         'declaration-colon-space-before': 'never',
         'declaration-block-semicolon-newline-after': 'always-multi-line',
@@ -102,7 +101,6 @@ module.exports = {
                 ignoreProperties: ['/font-family/']
             }
         ],
-        'value-list-comma-newline-after': 'always-multi-line',
         'value-list-comma-space-after': 'always-single-line',
         'value-list-comma-space-before': 'never'
     }
