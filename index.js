@@ -50,13 +50,39 @@ module.exports = {
         ],
         'selector-combinator-allowed-list': [' ', '+', '>', '~'],
         'selector-max-attribute': 1,
-        'selector-max-class': [3, { severity: 'warning' }],
-        'selector-max-combinators': [2, { severity: 'warning' }],
-        'selector-max-compound-selectors': [2, { severity: 'warning' }],
+        'selector-max-class': [
+            3,
+            {
+                severity: 'warning'
+            }
+        ],
+        'selector-max-combinators': [
+            2,
+            {
+                severity: 'warning'
+            }
+        ],
+        'selector-max-compound-selectors': [
+            2,
+            {
+                severity: 'warning'
+            }
+        ],
         'selector-max-empty-lines': 0,
         'selector-max-id': 0,
-        'selector-max-pseudo-class': [1, { severity: 'warning' }],
-        'selector-max-specificity': ['0,3,1', { severity: 'warning' }],
+        'selector-max-pseudo-class': [
+            2,
+            {
+                severity: 'warning'
+            }
+        ],
+        'selector-max-specificity': [
+            '0,3,1',
+            {
+                ignoreSelectors: ['/^:[a-z-]+$/'],
+                severity: 'warning'
+            }
+        ],
         'selector-max-type': [
             1,
             {
@@ -65,7 +91,12 @@ module.exports = {
             }
         ],
         'selector-max-universal': 1,
-        'selector-no-qualifying-type': true,
+        'selector-no-qualifying-type': [
+            true,
+            {
+                ignore: ['attribute']
+            }
+        ],
         'selector-pseudo-class-no-unknown': true,
         'selector-pseudo-element-colon-notation': 'double',
         'selector-pseudo-element-no-unknown': true,
