@@ -35,7 +35,7 @@
     "prettier": "^2.1.2"
   },
   "peerDependencies": {
-    "stylelint": "^13.0.0"
+    "stylelint": "^14.16.0"
   },
   "husky": {
     "hooks": {
