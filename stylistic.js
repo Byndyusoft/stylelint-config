@@ -1,4 +1,5 @@
 module.exports = {
+    plugins: ['@stylistic/stylelint-plugin'],
     rules: {
         'at-rule-empty-line-before': [
             'always',
@@ -102,6 +103,14 @@ module.exports = {
             }
         ],
         'value-list-comma-space-after': 'always-single-line',
-        'value-list-comma-space-before': 'never'
+        'value-list-comma-space-before': 'never',
+        'unicode-bom': 'never',
+        'value-list-max-empty-lines': 0,
+        'selector-max-empty-lines': 0,
+        'property-case': 'lower',
+        'no-extra-semicolons': true,
+        'function-max-empty-lines': 0,
+        'function-calc-no-invalid': true,
+        'declaration-block-trailing-semicolon': 'always'
     }
 };
