@@ -16,6 +16,10 @@ Create a `.stylelintrc` file with the following configuration:
 
 ```
 {
-  "extends": "@byndyusoft/stylelint-config"
+  "extends": [
+    "@byndyusoft/stylelint-config",
+    "@byndyusoft/stylelint-config/stylistic",
+    "@byndyusoft/stylelint-config/scss"
+  ]
 }
 ```

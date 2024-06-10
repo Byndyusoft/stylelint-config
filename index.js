@@ -17,14 +17,11 @@ module.exports = {
         ],
         'declaration-block-no-shorthand-property-overrides': true,
         'declaration-block-single-line-max-declarations': 1,
-        'declaration-block-trailing-semicolon': 'always',
         'declaration-no-important': true,
         'font-family-name-quotes': 'always-where-recommended',
         'font-family-no-duplicate-names': true,
         'font-family-no-missing-generic-family-keyword': true,
-        'function-calc-no-invalid': true,
         'function-linear-gradient-no-nonstandard-direction': true,
-        'function-max-empty-lines': 0,
         'function-name-case': 'lower',
         'keyframe-declaration-no-important': true,
         'max-nesting-depth': [
@@ -38,10 +35,8 @@ module.exports = {
         'no-duplicate-at-import-rules': true,
         'no-duplicate-selectors': true,
         'no-empty-source': true,
-        'no-extra-semicolons': true,
         'no-invalid-double-slash-comments': true,
         'no-unknown-animations': true,
-        'property-case': 'lower',
         'property-no-unknown': [
             true,
             {
@@ -68,7 +63,6 @@ module.exports = {
                 severity: 'warning'
             }
         ],
-        'selector-max-empty-lines': 0,
         'selector-max-id': 0,
         'selector-max-pseudo-class': [
             2,
@@ -103,9 +97,37 @@ module.exports = {
         'selector-type-no-unknown': true,
         'shorthand-property-no-redundant-values': true,
         'string-no-newline': true,
-        'value-list-max-empty-lines': 0,
         'unit-disallowed-list': ['cm', 'ch', 'ex', 'in', 'mm', 'pc', 'pt'],
         'unit-no-unknown': true,
-        'unicode-bom': 'never'
+        'at-rule-empty-line-before': [
+            'always',
+            {
+                except: ['first-nested', 'blockless-after-same-name-blockless'],
+                ignore: ['after-comment']
+            }
+        ],
+        'color-hex-length': 'long',
+        'color-named': 'never',
+        'font-family-name-quotes': 'always-where-recommended',
+        'function-calc-no-unspaced-operator': true,
+        'function-url-quotes': 'always',
+        'length-zero-no-unit': true,
+        'media-feature-name-no-unknown': true,
+        'media-feature-name-no-vendor-prefix': true,
+        'rule-empty-line-before': [
+            'always',
+            {
+                except: ['first-nested'],
+                ignore: ['after-comment']
+            }
+        ],
+        'selector-attribute-quotes': 'always',
+        'selector-type-case': 'lower',
+        'value-keyword-case': [
+            'lower',
+            {
+                ignoreProperties: ['/font-family/']
+            }
+        ]
     }
 };
