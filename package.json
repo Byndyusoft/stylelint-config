@@ -27,7 +27,8 @@
     "index.js",
     "LICENSE",
     "README.md",
-    "stylistic.js"
+    "stylistic.js",
+    "scss.js"
   ],
   "devDependencies": {
     "husky": "^4.3.0",
