@@ -91,7 +91,12 @@ module.exports = {
                 ignore: ['attribute']
             }
         ],
-        'selector-pseudo-class-no-unknown': true,
+        'selector-pseudo-class-no-unknown': [
+            true,
+            {
+                'ignorePseudoClasses': ['global', 'local']
+            }
+        ],
         'selector-pseudo-element-colon-notation': 'double',
         'selector-pseudo-element-no-unknown': true,
         'selector-type-no-unknown': true,
